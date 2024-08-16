@@ -1,0 +1,78 @@
+/* Login.css */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 30px;
+}
+
+.loginTitle {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loginForm {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loginForm label {
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.loginForm input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #c3acd0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 15px;
+  background-color: #674188;
+  color: #fffbf5;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+.loginBtn:hover {
+  background-color: #5b376e;
+}
+
+.login p {
+  color: #333;
+  font-size: 14px;
+}
+
+.login p a {
+  color: #674188;
+  text-decoration: none;
+}
+
+.login p a:hover {
+  text-decoration: underline;
+}

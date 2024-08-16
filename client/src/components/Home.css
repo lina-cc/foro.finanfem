@@ -1,0 +1,274 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container for Home Form */
+.homeformcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.homeTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Thread Container */
+.thread__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.thread__item {
+  padding: 20px;
+  width: 700px;
+  box-shadow: 0 0 1px 1px #c3acd0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+}
+
+.thread__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.thread__header h4 {
+  font-size: 20px; /* Incrementa el tamaño del título */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.thread__header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Reaction Container */
+.react__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacia los elementos */
+  margin-top: 10px;
+}
+
+.react__container .left,
+.react__container .center,
+.react__container .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.react__container .left {
+  justify-content: flex-start;
+}
+
+.react__container .center {
+  justify-content: center;
+}
+
+.react__container .right {
+  justify-content: flex-end;
+}
+
+.likesBtn,
+.commentsBtn {
+  height: 24px;
+  color: #f99417;
+  cursor: pointer;
+}
+
+.likesBtn:hover,
+.commentsBtn:hover {
+  color: #e58316;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #f44336;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.1);
+}
+
+.size-6 {
+  width: 24px;
+  height: 24px;
+}
+
+/* Reply Form */
+.replyForm {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.replyForm textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: none;
+}
+
+.replyBtn {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #674188;
+  color: #fffbf5;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.replyBtn:hover {
+  background-color: #5b376e;
+}
+
+/* Replies Section */
+.repliesSection {
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+.replyItem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+
+.replyItem small {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+}
+
+/* Home Form */
+.homeForm {
+  width: 100%;
+  max-width: 600px; /* Ajusta este valor según el tamaño máximo deseado */
+  margin: 0 auto; /* Centra el formulario */
+}
+
+.homeForm input,
+.homeForm textarea {
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #c3acd0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Asegura que padding y border estén incluidos en el width */
+}
+
+.homeForm textarea {
+  min-height: 150px; /* Ajusta este valor según el tamaño que desees */
+  max-height: 300px; /* Ajusta este valor según el tamaño que desees */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilo para el botón de Publicar */
+.homeBtn {
+  align-self: flex-end;
+  padding: 12px 24px;
+  background-color: #674188;
+  color: #fffbf5;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.homeBtn:hover {
+  background-color: #5b376e;
+  transform: scale(1.05);
+}
+
+.homeBtn:active {
+  background-color: #4a2d5b;
+}
+.thread__author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.thread__author div {
+  display: flex;
+  flex-direction: column;
+}
+
+.thread__author h4 {
+  margin: 0;
+}
+
+.thread__author p {
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+.replyItem small {
+  color: #888;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 5px;
+}
+.repliesSection {
+  margin-top: 20px;
+}
+
+.replyItem {
+  margin-bottom: 10px;
+}
+
+.replyForm {
+  margin-top: 20px;
+}
